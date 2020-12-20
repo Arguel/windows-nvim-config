@@ -26,6 +26,7 @@ call vundle#end()</code></pre>
 You can configure everything to your liking, I leave it as it is more comfortable for me, below I will also describe most of the keyboard shortcuts (which are generally the defaults of the X plugin in particular)
 
 <b>(optional)</b>
+
 If you use git, Vim-gitgutter will need you to specify the path to your git.exe directory, For example changing to the path where you have it installed (this line is inside ".vimrc" and is the default where git is install, so you may not need to change anything):
 
 <code>let g: gitgutter_git_executable = 'C:\Program Files\Git\bin\git.exe'</code>
