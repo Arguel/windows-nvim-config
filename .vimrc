@@ -1,5 +1,5 @@
 " =============================================================
-"							PLUGINS
+"			   PLUGINS
 " =============================================================
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
@@ -180,7 +180,7 @@ set termguicolors		" For more vivid colors (part of the monokai theme)
 
 
 " =============================================================
-"							CONFIGS
+"			   CONFIGS
 " =============================================================
 
 " ###################-----	Coc
@@ -373,7 +373,7 @@ let g:winresizer_keycode_finish = 79
 hi Normal guibg=NONE ctermbg=NONE
 
 " =============================================================
-"							BINDS
+"			   BINDS
 " =============================================================
 " Commands                        Mode
 " --------                        ----
