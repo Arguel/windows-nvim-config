@@ -132,6 +132,6 @@ Using ultisnips and CoC when you complete a snippet you can use the 'tab' key to
 ---
 # Credits
 ### References that I used to create a hybrid of configs
-* [jdhao](https://github.com/jdhao/nvim-config) I personally think that I will migrate tp this configuration in the future
+* [jdhao](https://github.com/jdhao/nvim-config) I personally think that I will migrate to this configuration in the future
 * [benawad](https://gist.github.com/benawad/b768f5a5bbd92c8baabd363b7e79786f)
 
