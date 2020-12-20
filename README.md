@@ -136,4 +136,5 @@ Using ultisnips and CoC when you complete a snippet you can use the 'tab' key to
 ### References that I used to create a hybrid of configs
 * [jdhao](https://github.com/jdhao/nvim-config) I personally think that I will migrate to this configuration in the future
 * [benawad](https://gist.github.com/benawad/b768f5a5bbd92c8baabd363b7e79786f)
+* [joshldavis](https://joshldavis.com/2014/04/05/vim-tab-madness-buffers-vs-tabs/#:~:text=Summary%3A%20A%20buffer%20is%20the,just%20a%20collection%20of%20windows.)
 
