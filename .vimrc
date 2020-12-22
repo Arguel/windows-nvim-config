@@ -614,8 +614,8 @@ nmap <Leader><space>l g_
 
 nmap ° <CR>
 
-" [k + j] to exit insert mode
-inoremap kj <ESC>
+" [j + k] to exit insert mode
+inoremap jk <ESC>
 
 " j/k will move virtual lines (lines that wrap)
 " For example 10j or 20k
