@@ -128,6 +128,8 @@ My current mapleader is space, so **Leader === space**
 | `V2jsd`                   | Normal        | being at the beginning of the parenthesis de-sandwich the current word, also works with ("(","[","{")                        |
 | `<C-a>`                   | Normal        | trigger winresizer                                                                                                           |
 | `O`                       | Normal        | fix and escape from window resize mode                                                                                       |
+| `gb or gB`                | Normal        | to flip through the most-recently used buffer stack without opening the buffer listing "drawer".                             |
+| `<Leader>to`              | Normal        | to open the tab page catalog (buffergator)                                                                                   |
 ### Special mentions
 
 Using ultisnips and CoC when you complete a snippet you can use the 'tab' key to jump to the next field to complete
