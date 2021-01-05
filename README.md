@@ -29,9 +29,16 @@ You can configure everything to your liking, I leave it as it is more comfortabl
 
 <b>(optional)</b>
 
-If you use git, Vim-gitgutter will need you to specify the path to your git.exe directory, For example changing to the path where you have it installed (this line is inside ".vimrc" and is the default where git is install, so you may not need to change anything):
-
+* If you use git, Vim-gitgutter will need you to specify the path to your git.exe directory, For example changing to the path where you have it installed (this line is inside ".vimrc" and is the default where git is install, so you may not need to change anything):
 <code>let g: gitgutter_git_executable = 'C:\Program Files\Git\bin\git.exe'</code>
+
+* There is an option enabled in the configuration (.vimrc) that will autosave the view (this includes, for example, where you were positioned before closing the file, if you created folds, they will also be saved, etc.) <pre>" save the folds  in the .vim/view directory
+autocmd BufWinLeave *.* mkview 
+autocmd BufWinEnter *.* silent loadview</pre>
+but it may generate lag and also it will execute with each new file and it will generate an error message if it is a new file (only the first time), it will also generate a folder called "view" in the nvim folder and in the vim folder <br> <br> <b>In windows</b>
+<code>C:\Users\ttuna\AppData\Local\nvim-data\view</code>
+or
+<code>C:\Users\ttuna\.vim\view</code> <br> <br> That is why if it bothers you to have this enabled it is better that you delete it from the .vimrc
 
 ---
 # Used plugins and their function
@@ -134,7 +141,7 @@ My current mapleader is space, so **Leader === space**
 
 * Using ultisnips and CoC when you complete a snippet you can use the 'tab' key to jump to the next field to complete
 
-* <code>Shift + v</code> to enter block select mode, <code>zf</code> (to create a fold), <code>zo</code> (to open a fold), <code>zc</code> (to close a fold)
+* <code>Shift + v</code> to enter block select mode, <code>zf</code> (to create a fold), <code>zo</code> (to open a fold), <code>zc</code> (to close a fold), <code>zd</code> (to delete a fold), `:Fold<CR>` (coc plugin) (to fold all the text in the current buffer).
 
 
 ---
