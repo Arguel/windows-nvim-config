@@ -132,7 +132,9 @@ My current mapleader is space, so **Leader === space**
 | `<Leader>to`              | Normal        | to open the tab page catalog (buffergator)                                                                                   |
 ### Special mentions
 
-Using ultisnips and CoC when you complete a snippet you can use the 'tab' key to jump to the next field to complete
+* Using ultisnips and CoC when you complete a snippet you can use the 'tab' key to jump to the next field to complete
+
+* <code>Shift + v</code> to enter block select mode, <code>zf</code> (to create a fold), <code>zo</code> (to open a fold), <code>zc</code> (to close a fold)
 
 
 ---
