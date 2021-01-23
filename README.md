@@ -38,7 +38,7 @@ autocmd BufWinEnter *.* silent loadview</pre>
 but it may generate lag and also it will execute with each new file and it will generate an error message if it is a new file (only the first time), it will also generate a folder called "view" in the nvim folder and in the vim folder <br> <br> <b>In windows</b>
 <code>C:\Users\ttuna\AppData\Local\nvim-data\view</code>
 or
-<code>C:\Users\ttuna\.vim\view</code> <br> <br> That is why if it bothers you to have this enabled it is better that you delete it from the .vimrc
+<code>C:\Users\ttuna\\.vim\view</code> <br> <br> That is why if it bothers you to have this enabled it is better that you delete it from the .vimrc
 
 ---
 # Used plugins and their function
