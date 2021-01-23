@@ -372,6 +372,10 @@ let g:winresizer_keycode_finish = 79
 " to hide the theme background
 hi Normal guibg=NONE ctermbg=NONE
 
+" save the folds  in the .vim/view & nvim-data/view directory
+autocmd BufWinLeave *.* mkview 
+autocmd BufWinEnter *.* silent loadview  
+
 " =============================================================
 "							BINDS
 " =============================================================
@@ -562,8 +566,6 @@ let g:EasyMotion_startofline = 0 " keep cursor column when JK motion
 
 " ###################-----	placeholder
 
-
-
 " ###################-----	Others
 " [space + w] save file
 nmap <Leader>w :w<CR>
@@ -591,12 +593,15 @@ nmap <Leader>L gt
 " [space + shift + h] to navigate one tab to the left
 nmap <Leader>H gT
 
-" [space + 2] to close a tab
+" [space + 2] to close the current tab
 nmap <Leader>2 :tabclose<CR>
 
 " [space + 3] to save the session and all the files you have open (like an IDE) 
 "(make up a name ending in '.vim') then to open it use 'vim -S name.vim'
 nmap <Leader>3 :mksession 
+
+" [space + 4] close the current buffer, you can use ":bd nameOfTheFile.html" to choose one to close
+nmap <Leader>4 :bd<CR>
 
 " [space + ctrl + h] to go to the beginning of the line (visual mode)
 nmap <Leader><C-h> v0
@@ -608,14 +613,34 @@ nmap <Leader><C-l> vg_
 " [space + space + l] to go to the end of the line
 nmap <Leader><space>l g_
 
+" ####----Shortcuts to use with vim fugitive----
+" [space + g + h] to choose the update on the left
+nmap <Leader>gh :diffget //2<CR>
+" [space + g + l] to choose the update on the right
+nmap <Leader>gl :diffget //3<CR>
+" [space + g + s] to activate the interactive vim fugitive menu (it's like the git status -s command)
+nmap <Leader>gs :G<CR>
+" ----------------------------------------------
+
+" ####----Shortcuts for working with vimdiff----
+" [space + g + u] to scan the document again in case of new differences
+nmap <Leader>gu :diffupdate<CR>
+" [space + g + k] to jump to the next difference
+nmap <Leader>gk ]c
+" [space + g + j] to go back to the previous difference 
+nmap <Leader>gj [c
+" ----------------------------------------------
+
 " inoremap ++ ~
 " inoremap 3e3 #
 " inoremap <M-3> #
 
+" to simulate enter key 
 nmap ° <CR>
 
 " [j + k] to exit insert mode
 inoremap jk <ESC>
+inoremap JK <ESC>
 
 " j/k will move virtual lines (lines that wrap)
 " For example 10j or 20k
