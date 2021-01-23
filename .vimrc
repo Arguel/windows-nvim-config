@@ -631,6 +631,9 @@ nmap <Leader>gk ]c
 nmap <Leader>gj [c
 " ----------------------------------------------
 
+" [space + 5] to restart CoC in case of bugs
+nmap <Leader>5 :CocRestart<CR>
+
 " inoremap ++ ~
 " inoremap 3e3 #
 " inoremap <M-3> #
