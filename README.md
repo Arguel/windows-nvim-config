@@ -113,7 +113,7 @@ My current mapleader is space, so **Leader === space**
 | `<Leader><C-l>`           | Normal        | to go to the end of the line (visual mode)                                                                                   |
 | `<Leader><space>l`        | Normal        | to go to the end of the line                                                                                                 |
 | `°`                       | Normal        | to simulate enter key                                                                                                        |
-| `kj`                      | Insert        | to exit insert mode                                                                                                          |
+| `jk`                      | Insert        | to exit insert mode                                                                                                          |
 | `<Leader>l`               | Normal        | to tell easymotion that we want to go right                                                                                  |
 | `<Leader>k`               | Normal        | to tell easymotion that we want to go up                                                                                     |
 | `<Leader>j`               | Normal        | to tell easymotion that we want to go down                                                                                   |
@@ -137,11 +137,20 @@ My current mapleader is space, so **Leader === space**
 | `O`                       | Normal        | fix and escape from window resize mode                                                                                       |
 | `gb or gB`                | Normal        | to flip through the most-recently used buffer stack without opening the buffer listing "drawer".                             |
 | `<Leader>to`              | Normal        | to open the tab page catalog (buffergator)                                                                                   |
+| `<Leader>gs`              | Normal        | to activate the interactive vim fugitive menu                                                                                |
+| `<Leader>gk`              | Normal        | to jump to the next difference (using vimdiff)                                                                               |
+| `<Leader>gj`              | Normal        | to go back to the previous difference (using vimdiff)                                                                        |
+| `<Leader>gu`              | Normal        | to scan the document again in case of new differences (using vimdiff)                                                        |
+| `<Leader>gh`              | Normal        | to choose the update on the left (using vim fugitive)                                                                        |
+| `<Leader>gl`              | Normal        | to choose the update on the right (using vim fugitive)                                                                       |
+| `<Leader>5`               | Normal        | to restart CoC in case of bugs                                                                                               |
 ### Special mentions
 
 * Using ultisnips and CoC when you complete a snippet you can use the 'tab' key to jump to the next field to complete
 
-* <code>Shift + v</code> to enter block select mode, <code>zf</code> (to create a fold), <code>zo</code> (to open a fold), <code>zc</code> (to close a fold), <code>zd</code> (to delete a fold), `:Fold<CR>` (coc plugin) (to fold all the text in the current buffer). <br><br> <b>Tip: you can use the key combination <code>ggVG</code> to select all the text and use <code>zo</code> to open the folds or some other command</b>
+* <code>Shift + v</code> to enter block select mode, <code>zf</code> (to create a fold), <code>zo</code> (to open a fold), <code>zc</code> (to close a fold), <code>zd</code> (to delete a fold), `:Fold<CR>` (coc plugin) or <code>zm</code> (to fold all the text in the current buffer), <code>zr</code> to open all the folds. <br><br> <b>Tip: you can use the key combination <code>ggVG</code> to select all the text and use <code>zo</code> to open the folds or some other command</b>
+
+* <code>:diffget</code> and <code>:diffput</code> can be abbreviated as `do` and `dp` respectively
 
 
 ---
