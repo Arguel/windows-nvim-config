@@ -152,7 +152,25 @@ My current mapleader is space, so **Leader === space**
 
 * <code>:diffget</code> and <code>:diffput</code> can be abbreviated as `do` and `dp` respectively
 
+---
+# How to keep it updated?
+To obtain the latest features of our plugins and plugin managers, we will need to update them from time to time
 
+In order to update the plugin manager that I use (in this case it would be "Plug") we will need to put this command in the console and execute it
+
+<code>:PlugUpgrade</code>
+(each plugin manager may have a different way to update it)
+
+Once an update is applied, I always recommend restarting nvim so that it does not throw errors if we continue to update something else.
+To update the plugins we are using (for example, coc, fugitive, ctrlp, nerdtree, etc) we will have to use this other command
+
+<code>:PlugUpdate</code>
+ 
+And finally to update the CoC extensions we are going to use the following command (as I mentioned above it is better to restart before executing it)
+
+<code>:CocUpdate</code>
+ 
+ 
 ---
 # Credits
 ### References that I used to create a hybrid of configs
