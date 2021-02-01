@@ -148,7 +148,8 @@ My current mapleader is space, so **Leader === space**
 
 * Using ultisnips and CoC when you complete a snippet you can use the 'tab' key to jump to the next field to complete
 
-* <code>Shift + v</code> to enter block select mode, <code>zf</code> (to create a fold), <code>zo</code> (to open a fold), <code>zc</code> (to close a fold), <code>zd</code> (to delete a fold), `:Fold<CR>` (coc plugin) or <code>zm</code> (to fold all the text in the current buffer), <code>zr</code> to open all the folds. <br><br> <b>Tip: you can use the key combination <code>ggVG</code> to select all the text and use <code>zo</code> to open the folds or some other command</b>
+* <code>Shift + v</code> to enter block select mode, <code>zf</code> (to create a fold), <code>zo</code> (to open a fold), <code>zc</code> (to close a fold), <code>zd</code> (to delete a fold), `:Fold<CR>` (coc plugin) or <code>zm</code> (to fold all the text in the current buffer), <code>zr</code> to open all the folds. <br><br> <b>Tip: you can use the key combination <code>ggVG</code> to select all the text and use <code>zo</code> to open the folds or some other command</b> <br><br> <ins><b>Note:</b></ins> `z*` fold methods only work when the method is manual or marker
+<code>:set foldmethod=manual</code> or <code>:set foldmethod=marker</code>
 
 * <code>:diffget</code> and <code>:diffput</code> can be abbreviated as `do` and `dp` respectively
 
