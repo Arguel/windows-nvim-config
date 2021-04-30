@@ -127,9 +127,9 @@ Plug 'mattn/emmet-vim'
 " https://github.com/simeji/winresizer
 Plug 'simeji/winresizer'
 
-" placeholder
-" placeholder
-"Plug 'placeholder'
+" Teach Vim about titlecase, with support for motions and text objects
+" https://github.com/christoomey/vim-titlecase
+Plug 'christoomey/vim-titlecase'
 
 " placeholder
 " placeholder
@@ -634,9 +634,10 @@ nmap <Leader>gj [c
 " [space + 5] to restart CoC in case of bugs
 nmap <Leader>5 :CocRestart<CR>
 
+" --- Personal maps ---
 " inoremap ++ ~
 " inoremap 3e3 #
-" inoremap <M-3> #
+inoremap <M-2> ``
 
 " to simulate enter key 
 nmap ° <CR>
