@@ -87,6 +87,7 @@ or
 * [winresizer](https://github.com/simeji/winresizer) very simple vim plugin for easy resizing of your vim windows
 * [vim-polyglot](https://github.com/sheerun/vim-polyglot) something like [prettier](https://github.com/prettier/prettier) but for many more languages and vim
 * [nerdcommenter](https://github.com/preservim/nerdcommenter) for commenting operations and styles
+* [vim-titlecase](https://github.com/christoomey/vim-titlecase) support for motions and text objects
 
 ---
 # Keyboard shortcuts
