@@ -131,14 +131,26 @@ Plug 'simeji/winresizer'
 " https://github.com/christoomey/vim-titlecase
 Plug 'christoomey/vim-titlecase'
 
+" Change an HTML(ish) opening tag and take the closing one along as well
+" https://github.com/AndrewRadev/tagalong.vim
+Plug 'AndrewRadev/tagalong.vim'
+
+" Vim plugin for quick and easy replacement
+" https://github.com/kqito/vim-easy-replace
+Plug 'kqito/vim-easy-replace'
+
+" A git blame plugin for neovim inspired by VS Code's GitLens plugin
+" https://github.com/APZelos/blamer.nvim
+Plug 'APZelos/blamer.nvim'
+
 " placeholder
 " placeholder
 "Plug 'placeholder'
 
-
 " Initialize plugin system
 call plug#end()
 
+" ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 " =============================================================
 " The explanations may be wrong, it is better to search the wiki
 
@@ -178,7 +190,7 @@ set termguicolors		" For more vivid colors (part of the monokai theme)
 " =============================================================
 
 
-
+" ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 " =============================================================
 "							CONFIGS
 " =============================================================
@@ -191,7 +203,23 @@ let g:coc_global_extensions = [
   \ 'coc-css',
   \ 'coc-git',
   \ 'coc-snippets',
+  \ 'coc-marketplace',
   \ ]
+" plus extensions installed via marketplace (described below):
+" coc-emmet
+" coc-sccsmodules
+" cos-markdownlint
+" coc-just-complete
+" coc-html-css-support
+" coc-htmlhint
+" coc-eslint
+" coc-python
+" coc-pyright
+" coc-htmldjango
+" coc-prettier
+" coc-coc-dash-complete
+" coc-coc-dot-complete
+" coc-
 
 " ###################-----	Vim-airline
 let g:airline_theme='powerlineish'
@@ -364,9 +392,29 @@ let g:winresizer_vert_resize = 3
 " Fix and escape from window resize mode (shift + o)
 let g:winresizer_keycode_finish = 79
 
+" ###################-----	Vim-closetag
+" This will make the list of non-closing tags self-closing in the specified files.
+let g:closetag_xhtml_filenames = '*.js,*.jsx,*.tsx'
+
+" These are the file extensions where this plugin is enabled.
+let g:closetag_filenames = '*.html,*.xhtml,*.xml,*.js,*.jsx,*.tsx,*.html.erb,*.md'
+
+" ###################-----	Vim-mustache-handlebars (Vim polyglot pack)
+" This activate mustache abbreviations
+let g:mustache_abbreviations = 1
+
+" ###################-----	Blamer.nvim
+" available colours 
+" https://vim.fandom.com/wiki/Xterm256_color_names_for_console_Vim
+highlight Blamer guifg=#afaf87
+
+" ###################-----	Tagalong.vim
+let g:tagalong_filetypes = ['html', 'xml', 'jsx', 'eruby', 'ejs', 'eco', 'php', 'htmldjango', 'javascriptreact', 'typescriptreact', 'javascript']
+
 " ###################-----	placeholder
 
 " ###################-----	placeholder
+
 
 " ###################-----	Others
 " to hide the theme background
@@ -376,6 +424,10 @@ hi Normal guibg=NONE ctermbg=NONE
 autocmd BufWinLeave *.* mkview 
 autocmd BufWinEnter *.* silent loadview  
 
+" Syntax - new
+au BufNewFile,BufRead *.ejs set filetype=html
+
+" ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 " =============================================================
 "							BINDS
 " =============================================================
@@ -421,7 +473,6 @@ function! s:check_back_space() abort
 endfunction
 
 let g:coc_snippet_next = '<tab>'
-
 
 " Use `[g` and `]g` to navigate diagnostics
 " Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
@@ -504,6 +555,19 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>pl  :<C-u>CocListResume<CR>
 
+
+if has('nvim-0.4.3') || has('patch-8.2.0750')
+          nnoremap <nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
+          nnoremap <nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
+		  inoremap <nowait><expr> <C-f> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1, 1)\<cr>" : "\<Right>"
+		  inoremap <nowait><expr> <C-b> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0, 1)\<cr>" : "\<Left>"
+endif
+
+
+
+" to enter the coc marketplace
+nnoremap <Leader>coc :CocList marketplace<CR>
+
 " ###################-----	Ctrlp
 " commands to invoke CtrlP and modes
 nmap <Leader>p :CtrlP<CR>
@@ -558,9 +622,13 @@ map <Leader>h <Plug>(easymotion-linebackward)
 
 let g:EasyMotion_startofline = 0 " keep cursor column when JK motion
 
-" ###################-----	placeholder
+" ###################-----	Blamer.nvim
+" activate inline git blame (allows you to see the commits on the line that the cursor is on)
+nnoremap <Leader>bl :BlamerToggle<CR>
 
-" ###################-----	placeholder
+" ###################-----	Coc-marketplace
+" to enter the coc marketplace
+nnoremap <Leader>coc :CocList marketplace<CR>
 
 " ###################-----	placeholder
 
@@ -650,6 +718,8 @@ inoremap JK <ESC>
 " For example 10j or 20k
 nnoremap <expr> j v:count ? 'j' : 'gj'
 nnoremap <expr> k v:count ? 'k' : 'gk'
+
+
 
 
 
