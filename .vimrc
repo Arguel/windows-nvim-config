@@ -425,7 +425,7 @@ autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview  
 
 " Syntax - new
-au BufNewFile,BufRead *.ejs set filetype=html
+au BufNewFile,BufRead *.ejs,*.hbs set filetype=html
 
 " ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 " =============================================================
@@ -452,27 +452,11 @@ let mapleader=" "
 " use <c-space>for trigger completion
 inoremap <silent><expr> <c-space> coc#refresh()
 
-" Use <Tab> to navigate the completion list:
-inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
-
 " Make <CR> auto-select the first completion item and notify coc.nvim to
 " format on enter, <cr> could be remapped by other vim plugin
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
-" Make <tab> used for trigger completion, completion confirm, snippet expand and jump like VSCode.
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? coc#_select_confirm() :
-      \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
-
-function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
-
-let g:coc_snippet_next = '<tab>'
 
 " Use `[g` and `]g` to navigate diagnostics
 " Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
@@ -563,7 +547,11 @@ if has('nvim-0.4.3') || has('patch-8.2.0750')
 		  inoremap <nowait><expr> <C-b> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0, 1)\<cr>" : "\<Left>"
 endif
 
+" Use [ctrl + j] to navigate the completion list: (up)
+inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
 
+" Use [ctrl + m] to navigate the completion list: (down)
+inoremap <expr><C-k> pumvisible() ? "\<C-p>" : "\<C-h>"
 
 " to enter the coc marketplace
 nnoremap <Leader>coc :CocList marketplace<CR>
