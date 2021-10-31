@@ -1,5 +1,7 @@
 <p align="center"><img src="https://i.imgur.com/LIwFcNE.png"></p>
 
+# Description
+
 Mainly configured for web development (for now at least) with the default nvim console (not nvim-qt)
 
 I tried to keep everything tidy (it might get a little disordered when is uploading to the repository because I usually use notepad ++ to edit it quickly and the tabs are taken differently in GitHub). For now it is ideally designed to use the configuration in windows (and with the limitations that that brings) together with the windows terminal, I have a configuration for that also in this [other repository](https://github.com/Arguel/windows-terminal-config) and it is the one I currently use
@@ -211,4 +213,3 @@ And finally to update the CoC extensions we are going to use the following comma
 - [jdhao](https://github.com/jdhao/nvim-config) I personally think that I will migrate to this configuration in the future
 - [benawad](https://gist.github.com/benawad/b768f5a5bbd92c8baabd363b7e79786f)
 - [joshldavis](https://joshldavis.com/2014/04/05/vim-tab-madness-buffers-vs-tabs/#:~:text=Summary%3A%20A%20buffer%20is%20the,just%20a%20collection%20of%20windows.)
-
