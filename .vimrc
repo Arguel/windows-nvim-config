@@ -143,6 +143,10 @@ Plug 'kqito/vim-easy-replace'
 " https://github.com/APZelos/blamer.nvim
 Plug 'APZelos/blamer.nvim'
 
+" Using the jedi autocompletion library for VIM.
+" https://github.com/davidhalter/jedi-vim
+Plug 'davidhalter/jedi-vim'
+
 " placeholder
 " placeholder
 "Plug 'placeholder'
@@ -213,12 +217,17 @@ let g:coc_global_extensions = [
 " coc-html-css-support
 " coc-htmlhint
 " coc-eslint
-" coc-python
+" coc-pyright
 " coc-pyright
 " coc-htmldjango
 " coc-prettier
-" coc-coc-dash-complete
-" coc-coc-dot-complete
+" coc-dash-complete
+" coc-dot-complete
+" coc-jedi
+" coc-
+" coc-
+" coc-
+" coc-
 " coc-
 
 " ###################-----	Vim-airline
@@ -555,6 +564,9 @@ inoremap <expr><C-k> pumvisible() ? "\<C-p>" : "\<C-h>"
 
 " to enter the coc marketplace
 nnoremap <Leader>coc :CocList marketplace<CR>
+
+" to review errors flagged by coc
+nnoremap <Leader>err :CocDiagnostics<CR>
 
 " ###################-----	Ctrlp
 " commands to invoke CtrlP and modes
