@@ -1,4 +1,4 @@
-
+<p align="center"><img src="https://i.imgur.com/LIwFcNE.png"></p>
 
 Mainly configured for web development (for now at least) with the default nvim console (not nvim-qt)
 
