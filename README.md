@@ -18,6 +18,7 @@ Maybe it lacks a bit of optimization, so if you notice poor performance I recomm
 - Additional autocompletion/setup for python with the following modules (you need to have [Python](https://www.python.org/downloads/) installed): <br/>
 <pre>
 pip install pynvim
+pip install neovim
 pip install -U setuptools
 pip install python-language-server
 pip install 'python-language-server[all]'
