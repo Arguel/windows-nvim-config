@@ -19,9 +19,14 @@ Maybe it lacks a bit of optimization, so if you notice poor performance I recomm
 <pre>
 pip install pynvim
 pip install neovim
+
 pip install -U setuptools
+
 pip install python-language-server
 pip install 'python-language-server[all]'
+
+pip install git+git://github.com/psf/black
+
 pip install pyls-mypy
 pip install pyls-isort
 pip install pyls-black
