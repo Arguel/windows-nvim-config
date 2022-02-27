@@ -151,6 +151,18 @@ Plug 'davidhalter/jedi-vim'
 " placeholder
 "Plug 'placeholder'
 
+" placeholder
+" placeholder
+"Plug 'placeholder'
+
+" placeholder
+" placeholder
+"Plug 'placeholder'
+
+" placeholder
+" placeholder
+"Plug 'placeholder'
+
 " Initialize plugin system
 call plug#end()
 
@@ -295,6 +307,7 @@ let g:NERDTreeDirArrowCollapsible = ''
 " Autocloses when a file is open
 let g:NERDTreeQuitOnOpen=1
 
+" Folders to ignore
 let g:NERDTreeIgnore = ['^node_modules$']
 
 
@@ -419,6 +432,8 @@ highlight Blamer guifg=#afaf87
 
 " ###################-----	Tagalong.vim
 let g:tagalong_filetypes = ['html', 'xml', 'jsx', 'eruby', 'ejs', 'eco', 'php', 'htmldjango', 'javascriptreact', 'typescriptreact', 'javascript']
+
+" ###################-----	placeholder
 
 " ###################-----	placeholder
 
