@@ -17,19 +17,19 @@ Maybe it lacks a bit of optimization, so if you notice poor performance I recomm
 - Use the [Windows Terminal](https://www.microsoft.com/p/windows-terminal/9n0dx20hk701?rtc=1&activetab=pivot:overviewtab)
 - Additional autocompletion/setup for python with the following modules (you need to have [Python](https://www.python.org/downloads/) installed): <br/>
 <pre>
-pip install pynvim
-pip install neovim
+pip3 install pynvim
+pip3 install neovim
 
-pip install -U setuptools
+pip3 install -U setuptools
 
-pip install python-language-server
-pip install 'python-language-server[all]'
+pip3 install python-language-server
+pip3 install 'python-language-server[all]'
 
-pip install git+git://github.com/psf/black
+pip3 install git+git://github.com/psf/black
 
-pip install pyls-mypy
-pip install pyls-isort
-pip install pyls-black
+pip3 install pyls-mypy
+pip3 install pyls-isort
+pip3 install pyls-black
 </pre>
 
 <b>(necessary)</b>
