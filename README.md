@@ -3,7 +3,7 @@
 # Description
 Mainly configured for web development (for now at least) with the default nvim console (not nvim-qt)
 
-I tried to keep everything tidy (it might get a little disordered when is uploading to the repository because I usually use notepad ++ to edit it quickly and the tabs are taken differently in GitHub). For now it is ideally designed to use the configuration in windows (and with the limitations that that brings) together with the windows terminal, I have a configuration for that also in this [other repository](https://github.com/Arguel/windows-terminal-config) and it is the one I currently use
+I tried to keep everything tidy (it might get a little disordered when is uploading to the repository because I usually use notepad ++ to edit it quickly and the tabs are taken differently in GitHub). For now it is ideally designed to use the configuration in windows (and with the limitations that that brings) together with the windows terminal, I have a configuration for that also in this [other repository](https://github.com/enzoarguello512/windows-terminal-config) and it is the one I currently use
 
 Maybe it lacks a bit of optimization, so if you notice poor performance I recommend that you leave activated only what you consider necessary, in ".vimrc" I try to give a description of what exactly does each thing so you can edit everything more easily
 
