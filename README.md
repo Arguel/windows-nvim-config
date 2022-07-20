@@ -15,23 +15,6 @@ Maybe it lacks a bit of optimization, so if you notice poor performance I recomm
 <b>(optional)</b>
 
 - Use the [Windows Terminal](https://www.microsoft.com/p/windows-terminal/9n0dx20hk701?rtc=1&activetab=pivot:overviewtab)
-- Additional autocompletion/setup for python with the following modules (you need to have [Python](https://www.python.org/downloads/) installed): <br/>
-<pre>
-pip3 install pynvim
-pip3 install neovim
-
-pip3 install -U setuptools
-
-pip3 install python-language-server
-pip3 install 'python-language-server[all]'
-
-pip3 install git+git://github.com/psf/black
-
-pip3 install pyls-mypy
-pip3 install pyls-isort
-pip3 install pyls-black
-
-</pre>
 
 <b>(necessary)</b>
 
@@ -48,6 +31,25 @@ call vundle#end()
 - Once you have a plugin manager you will have to install the plugins that are in ".vimrc", in case of using vim-plug, you only have to put this command in the console and you should install them
   <code>:PlugInstall</code>
 - If the icons do not load I recommend installing this font [LiterationMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/LiberationMono.zip)
+- To use the plugins you will also need:
+  - [node](https://nodejs.org/en/) or [nvm-windows]()
+  - [python](https://www.python.org/downloads/)<br>
+    Additionally you can improve the autocomplete for python by installing the following packages
+    <pre>
+    pip3 install pynvim
+    pip3 install neovim
+
+    pip3 install -U setuptools
+
+    pip3 install python-language-server
+    pip3 install 'python-language-server[all]'
+
+    pip3 install git+git://github.com/psf/black
+
+    pip3 install pyls-mypy
+    pip3 install pyls-isort
+    pip3 install pyls-black
+    </pre>
 
 ---
 
