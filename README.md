@@ -20,17 +20,17 @@ Maybe it lacks a bit of optimization, so if you notice poor performance I recomm
 
 - Have [vim](https://www.vim.org/) and [nvim](https://neovim.io/) installed
 - A plugin manager (I personally use [Vim-Plug](https://github.com/junegunn/vim-plug)), but you can safely use any other, for example [Vim-Vundle](https://github.com/VundleVim/Vundle.vim), and you would only have to change the lines to suit your plugin manager.
-For example using Vim-Vundle you would have to change the following:
-<pre>
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" And any other plugin you want to change
-Plugin 'tpope/vim-fugitive'
-call vundle#end()
-</pre>
+  For example using Vim-Vundle you would have to change the following:
+  <pre>
+  set rtp+=~/.vim/bundle/Vundle.vim
+  call vundle#begin()
+  " And any other plugin you want to change
+  Plugin 'tpope/vim-fugitive'
+  call vundle#end()
+  </pre>
 - Once you have a plugin manager you will have to install the plugins that are in ".vimrc", in case of using vim-plug, you only have to put this command in the console and you should install them
   <code>:PlugInstall</code>
-- If the icons do not load I recommend installing this font [LiterationMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/LiberationMono.zip)
+- If the icons do not load I recommend installing this font [LiterationMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/LiberationMono.zip) or any other font from [Nerd Font](https://www.nerdfonts.com/font-downloads)
 - To use the plugins you will also need:
   - [node](https://nodejs.org/en/) or [nvm-windows](https://github.com/coreybutler/nvm-windows)
   - [python](https://www.python.org/downloads/)<br>
