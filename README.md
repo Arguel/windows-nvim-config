@@ -32,7 +32,7 @@ call vundle#end()
   <code>:PlugInstall</code>
 - If the icons do not load I recommend installing this font [LiterationMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/LiberationMono.zip)
 - To use the plugins you will also need:
-  - [node](https://nodejs.org/en/) or [nvm-windows]()
+  - [node](https://nodejs.org/en/) or [nvm-windows](https://github.com/coreybutler/nvm-windows)
   - [python](https://www.python.org/downloads/)<br>
     Additionally you can improve the autocomplete for python by installing the following packages
     <pre>
